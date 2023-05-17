@@ -6,6 +6,13 @@ import RepositoryItem from '../RepositoryItem'
 
 import './index.css'
 
+const apiStatusConstants = {
+  initial: 'INITIAL',
+  success: 'SUCCESS',
+  failure: 'FAILURE',
+  inProgress: 'IN_PROGRESS',
+}
+
 const languageFiltersData = [
   {id: 'ALL', language: 'All'},
   {id: 'JAVASCRIPT', language: 'Javascript'},
@@ -13,15 +20,6 @@ const languageFiltersData = [
   {id: 'JAVA', language: 'Java'},
   {id: 'CSS', language: 'CSS'},
 ]
-
-// Write your code here
-
-const apiStatusConstants = {
-  initial: 'INITIAL',
-  inProgress: 'IN_PROGRESS',
-  success: 'SUCCESS',
-  failure: 'FAILURE',
-}
 
 class GithubPopularRepos extends Component {
   state = {
